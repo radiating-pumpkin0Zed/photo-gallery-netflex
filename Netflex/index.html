@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflex Picture Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">"
+        <script src="script.js" defer></script>
+</head> 
+<body>
+    <header class="header">
+        <div class="logo">NETFLEX</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Masterpiece</a>
+            <a href="#">Popular</a>
+            <a href="#">New</a>
+        </nav>
+        <div class="profile"> 
+            <input type="text" placeholder="Search" class="search"/>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://picsum.photos/1600/600?random=2" alt="Featured" class="hero-img"/>
+        <div class="hero-content">
+            <div class="buttons">
+                <button class="btn full-screen" onclick="alert('Work in progress JS code uploading soon')">Full screen</button>
+                <button class="btn info" onclick="alert('Work in progress JS code uploading soon')">More info</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <h2>Trending Now</h2>
+        <div class="row-cards">
+            <img src="https://picsum.photos/200/300?random=1" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=3" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=4" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=5" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=6" alt="Movie"/>
+        </div>
+    </section>
+    
+    <section class="row">
+        <h2>Randoms</h2>
+        <div class="row-cards">
+            <img src="https://picsum.photos/200/300?random=7" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=8" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=9" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=10" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=11" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=12" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=13" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=14" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=15" alt="Movie"/>
+            <img src="https://picsum.photos/200/300?random=16" alt="Movie"/>
+        </div>
+    </section>
+
+    <div id="'imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage" alt="image not loaded"/>
+    </div>
+</body>
+</html>

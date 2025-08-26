@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #141414;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #e50914;
+  font-family: 'Bebas Neve', sans-serif;
+  font-size: 32px;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: inset 4px 3px 4px rgba(27, 27, 27, 0.8);
+}
+
+.hero {
+  position: relative;
+  margin-top: 70px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  cursor: pointer
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 20%;
+  left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+}
+
+.button .btn {
+  padding: 10px 20px;
+  margin: 10px 10px 0 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.full-screen, .info {
+  background: rgba(0, 255, 255, 0.721);
+  color: black;
+  border-radius: 5px;
+  border: 2px solid ;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.full-screen:hover, .info:hover {
+  transform: scale(1.1);
+}
+
+.row {
+  padding: 20px 30px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+.row-cards {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.row-cards img {
+  width: 200px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.row-cards img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #e50914;
+}
